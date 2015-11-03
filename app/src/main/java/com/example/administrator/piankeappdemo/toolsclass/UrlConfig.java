@@ -9,5 +9,5 @@ package com.example.administrator.piankeappdemo.toolsclass;
  */
 public class UrlConfig {
     public static final String URL_LOGIN = "http://www.baidu.com";
-    public static final String URL_CHART = "http://192.168.0.74:8080/myServer/Myserverlet";
+    public static final String URL_STARTIMAGE = "http://api2.pianke.me/pub/screen";
 }

@@ -2,6 +2,8 @@ package com.example.administrator.piankeappdemo.baseclass;
 
 import android.app.Application;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+
 
 /**
  * Created by 董梦娇 on 2015/10/10.
@@ -26,6 +28,9 @@ public class AppApplication extends Application {
          * 地图初始化
          * 数据统计初始化
          */
+
+        //Fresco初始化
+        Fresco.initialize(AppApplication.getApplication());
 
 
 

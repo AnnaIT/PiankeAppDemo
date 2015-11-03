@@ -6,7 +6,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 
-import com.example.pianke.baseclass.AppApplication;
+import com.example.administrator.piankeappdemo.baseclass.AppApplication;
+
 
 /**
  * Created by 董梦娇 on 2015/11/1.
@@ -62,7 +63,7 @@ public class NetworkUtils {
             NetworkInfo mMobileNetworkInfo = mConnectivityManager
                     .getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
             if (mMobileNetworkInfo != null) {
-                return mMobileNetworkInfo.isAvailable();
+                return true;
             }
         }
         return false;

@@ -1,6 +1,7 @@
 package com.example.administrator.piankeappdemo.internet;
 
-import com.example.pianke.toolsclass.UrlConfig;
+
+import com.example.administrator.piankeappdemo.toolsclass.UrlConfig;
 
 import java.util.HashMap;
 
@@ -23,7 +24,14 @@ public class MyAllHttpMethod {
         InternetConnect.newInstance().addReqest(UrlConfig.URL_LOGIN,params,listener);
 
     }
-    public static void register(){
+
+    /**
+     * 获得引导界面的图片
+     * @return
+     */
+    public static void getStartImg(HashMap<String,String> params,InternetConnect.onConnectionListener listener){
+
+        InternetConnect.newInstance().addReqest(UrlConfig.URL_STARTIMAGE,params,listener);
 
     }
 
